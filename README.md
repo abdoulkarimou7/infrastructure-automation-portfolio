@@ -39,7 +39,7 @@ chmod +x script.sh
 - [x] Day 11 — CI pipeline for task-manager-api (tests with Jest/Supertest, PostgreSQL service, Docker build)
 - [x] Day 12 — Full CD for task-manager-api (image pushed to ghcr.io), Trivy security scan, debugged duplicated Docker step across jobs
 - [x] Day 13 — Wrote api-ci.yml and a new docker-compose.yml (MySQL) from scratch, YAML anchors understanding
-- [x] Day 14 — YAML mastery exercises (GitHub Actions x2 from scratch, docker-compose with MySQL), LinkedIn Week 2 post
+- [x] Day 14 — YAML mastery exercises (GitHub Actions x2 from scratch, docker-compose with MySQL)
 
 ### Milestones
 - [x] Phase 1 complete — Bash/Linux/Git foundations (Day 5, ahead of schedule)
