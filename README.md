@@ -23,6 +23,9 @@ chmod +x script.sh
 
 
 ## Progress
+## Progress
+
+### Daily log
 - [x] Day 1 — Git setup & project structure
 - [x] Day 2 — Git problem resolution & README.md structure
 - [x] Day 3 — grep/find/sed, cron automation, git stash & aliases
@@ -36,12 +39,15 @@ chmod +x script.sh
 - [x] Day 11 — CI pipeline for task-manager-api (tests with Jest/Supertest, PostgreSQL service, Docker build)
 - [x] Day 12 — Full CD for task-manager-api (image pushed to ghcr.io), Trivy security scan, debugged duplicated Docker step across jobs
 - [x] Day 13 — Wrote api-ci.yml and a new docker-compose.yml (MySQL) from scratch, YAML anchors understanding
-- [ ] Day 15 — Phase 1 complete (Bash/Git/README)
-- [ ] Day 30 — React portfolio live
-- [ ] Day 45 — First DevOps project + CI/CD
-- [ ] Day 60 — Terraform project
-- [ ] Day 75 — Kubernetes + monitoring
-- [ ] Day 90 — Final deployment + complete portfolio
+- [x] Day 14 — YAML mastery exercises (GitHub Actions x2 from scratch, docker-compose with MySQL), LinkedIn Week 2 post
+
+### Milestones
+- [x] Phase 1 complete — Bash/Linux/Git foundations (Day 5, ahead of schedule)
+- [x] React portfolio live with CI/CD (Day 9, ahead of schedule)
+- [x] First full DevOps project with CI/CD — task manager API (Day 12, ahead of schedule)
+- [ ] Terraform project
+- [ ] Kubernetes + monitoring
+- [ ] Final deployment + complete portfolio (Day 90)
 
 ### Link : 
 - Portfolio: https://abdoulkarimou7.github.io/devops-journey/
