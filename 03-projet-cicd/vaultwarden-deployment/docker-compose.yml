@@ -1,0 +1,27 @@
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    environment:
+      DOMAIN: "https://localhost"
+      SIGNUPS_ALLOWED: true
+    volumes:
+      - ./vw-data/:/data/
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "444:444"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - vaultwarden
+
+volumes:
+  caddy_data:
+  caddy_config:
