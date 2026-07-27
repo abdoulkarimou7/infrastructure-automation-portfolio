@@ -41,6 +41,8 @@ chmod +x script.sh
 - [x] Day 13 — Wrote api-ci.yml and a new docker-compose.yml (MySQL) from scratch, YAML anchors understanding
 - [x] Day 14 — YAML mastery exercises (GitHub Actions x2 from scratch, docker-compose with MySQL)
 - [x] Day 15 — Phase 3 final test: wrote Dockerfile, docker-compose.yml, and full CI/CD workflow from scratch for a new project (URL shortener with Redis)
+- [x] Day 16 —  Practice deplyement on local the project of vaultwarden (author:dani-garcia
+) : Docker-compose.yml 
 
 ### Milestones
 - [x] Phase 1 complete — Bash/Linux/Git foundations (Day 5, ahead of schedule)
