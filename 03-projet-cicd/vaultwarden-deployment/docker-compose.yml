@@ -5,7 +5,7 @@ networks:
     
 services:
   vaultwarden:
-    image: vaultwarden/server:latest
+    build: .
     container_name: vaultwarden
     networks: [internal]
     restart: unless-stopped
@@ -13,6 +13,12 @@ services:
       DOMAIN: ${VAULTWARDEN_DOMAIN}
     volumes:
       - ./vw-data/:/data/
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
 
   caddy:
     image: caddy:2-alpine

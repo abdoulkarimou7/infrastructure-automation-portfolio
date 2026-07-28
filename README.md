@@ -43,6 +43,7 @@ chmod +x script.sh
 - [x] Day 15 — Phase 3 final test: wrote Dockerfile, docker-compose.yml, and full CI/CD workflow from scratch for a new project (URL shortener with Redis)
 - [x] Day 16 —  Practice deplyement on local the project of vaultwarden (author:dani-garcia
 ) : Docker-compose.yml 
+- [x] Day 17 — Vaultwarden secure architecture: internal bridge network, .env externalization, custom Dockerfile with curl, and container healthchecks
 
 ### Milestones
 - [x] Phase 1 complete — Bash/Linux/Git foundations (Day 5, ahead of schedule)
