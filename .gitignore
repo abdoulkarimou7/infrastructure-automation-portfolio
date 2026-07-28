@@ -14,3 +14,4 @@ cred.txt
 01-bash-linux/test.log
 01-bash-linux/cron-output.log
 01-bash-linux/config.env
+03-project-cicd/vaultwarden-deployment/vw-data/
