@@ -1,11 +1,16 @@
+networks: 
+  internal:
+    internal: true 
+
+    
 services:
   vaultwarden:
     image: vaultwarden/server:latest
     container_name: vaultwarden
+    networks: [internal]
     restart: unless-stopped
     environment:
-      DOMAIN: "https://localhost"
-      SIGNUPS_ALLOWED: true
+      DOMAIN: ${VAULTWARDEN_DOMAIN}
     volumes:
       - ./vw-data/:/data/
 
@@ -14,7 +19,8 @@ services:
     container_name: caddy
     restart: unless-stopped
     ports:
-      - "444:444"
+      - ${CADDY_PORT}
+    networks: [internal]
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
