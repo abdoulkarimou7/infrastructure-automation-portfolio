@@ -65,7 +65,7 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v5
         with:
-          context: 03-projet-cicd/task-manager-api
+          context: 03-cicd-projet/task-manager-api
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/task-manager-api:latest
