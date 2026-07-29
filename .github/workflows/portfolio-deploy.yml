@@ -23,7 +23,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     defaults:
       run:
-        working-directory: 02-portfolio-react
+        working-directory: 02-react-portfolio
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

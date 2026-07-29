@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - '03-projet-cicd/task-manager-api/**'
+      - '03-cicd-projet/task-manager-api/**'
 
 jobs:
   test:
