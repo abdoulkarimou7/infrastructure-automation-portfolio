@@ -4,7 +4,7 @@ function Hero() {
       <h1>Linux & Infrastructure Automation Portfolio</h1>
       <p className="subtitle">
         Computer Science Engineering student building production-oriented Linux, Docker and CI/CD projects while progressing toward DevOps and DevSecOps.
-      </p>
+      </p> 
     </section>
   );
 }
