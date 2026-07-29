@@ -32,5 +32,3 @@ app.delete('/tasks/:id', async (req, res) => {
 });
 
 module.exports = app;
-
-/* simple commente */
