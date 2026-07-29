@@ -25,7 +25,7 @@ function Skills() {
           <li>Kubernetes</li>
           <li>Monitoring & Observability</li>
           <li>AWS Cloud</li>
-          <li>DevSecOps</li> 
+          <li>DevSecOps  Test:</li> 
         </ul>
       </div>
     </section>
