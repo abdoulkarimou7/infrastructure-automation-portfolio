@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 03-projet-cicd/task-manager-api
+        working-directory: 03-cicd-projet/task-manager-api
 
     services:
       postgres:
