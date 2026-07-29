@@ -1,9 +1,11 @@
-# DevOps Journey — 90 Days
+# Infrastructure Automation Portfolio
 
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
-This repository documents my 90-day progression toward building a concrete DevOps profile: automation, CI/CD, infrastructure as code, observability.
+Production-oriented Linux, Docker and CI/CD projects showcasing infrastructure automation, deployment pipelines and system administration skills.
+
+This repository also documents my continuous progression toward DevOps and DevSecOps through real-world projects.
 
 ## Structure
 
