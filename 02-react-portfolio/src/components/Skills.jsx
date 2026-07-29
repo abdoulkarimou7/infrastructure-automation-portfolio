@@ -4,7 +4,7 @@ function Skills() {
       <h2>Technical Skills</h2>
 
       <div>
-        <h3>Core Skills </h3>
+        <h3>Core Skills</h3>
         <ul>
           <li>Linux Administration</li>
           <li>Bash Scripting</li>
