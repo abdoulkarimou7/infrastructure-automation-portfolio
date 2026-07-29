@@ -56,7 +56,7 @@ chmod +x script.sh
 - [ ] Final deployment + complete portfolio (Day 90)
 
 ### Link : 
-- Portfolio: https://abdoulkarimou7.github.io/devops-journey/
+- Portfolio: https://abdoulkarimou7.github.io/infrastructure-automation-portfolio/
 - Linkedin: https://www.linkedin.com/in/mahamadou-aboubacar-abdoulkarimou-272a14324/
 - X: https://x.com/RIMKUS8558
 - Instagram: https://www.instagram.com/y4rim4/
