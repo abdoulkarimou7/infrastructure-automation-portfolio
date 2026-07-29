@@ -4,14 +4,14 @@ on:
   push:
     branches: [main]
     paths:
-      - '02-portfolio-react/**'
+      - '02-react-portfolio/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 02-portfolio-react
+        working-directory: 02-react-portfolio
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
