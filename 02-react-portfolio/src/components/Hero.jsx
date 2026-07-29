@@ -1,9 +1,9 @@
 function Hero() {
   return (
     <section className="hero" id="home"> 
-      <h1>Aspiring DevOps Engineer</h1>
+      <h1>Linux & Infrastructure Automation Portfolio</h1>
       <p className="subtitle">
-        Computer Science Engineering student building strong foundations in Linux, Bash, Git and automation through hands-on projects and daily practice. Currently expanding my skills in Docker, CI/CD, cloud technologies and Infrastructure as Code, with the long-term goal of becoming a DevSecOps Engineer. Seeking a DevOps internship where I can learn, contribute and grow.
+        Computer Science Engineering student building production-oriented Linux, Docker and CI/CD projects while progressing toward DevOps and DevSecOps.
       </p>
     </section>
   );

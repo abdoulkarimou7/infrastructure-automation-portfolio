@@ -1,26 +1,31 @@
 function Skills() {
   return (
     <section className="skills" id="skills">
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
+
       <div>
-        <h3>Strong Foundation</h3>
+        <h3>Core Skills</h3>
         <ul>
-          <li>Linux fundamentals</li>
-          <li>Bash scripting</li>
-          <li>Git version control</li>
-          <li>Automation concepts</li>
-          <li>Networking fundamentals</li>
-          <li>SSH & key-based authentication</li>
+          <li>Linux Administration</li>
+          <li>Bash Scripting</li>
+          <li>Git & GitHub</li>
+          <li>Networking Fundamentals</li>
+          <li>SSH & Key-based Authentication</li>
+          <li>Docker</li>
+          <li>Docker Compose</li>
+          <li>GitHub Actions</li>
+          <li>CI/CD Pipelines</li>
         </ul>
       </div>
+
       <div>
-        <h3>Learning Next</h3>
+        <h3>Currently Learning</h3>
         <ul>
-          <li>Docker & containerization</li>
-          <li>CI/CD with GitHub Actions</li>
           <li>Terraform (Infrastructure as Code)</li>
           <li>Kubernetes</li>
           <li>Monitoring & Observability</li>
+          <li>AWS Cloud</li>
+          <li>DevSecOps</li>
         </ul>
       </div>
     </section>
