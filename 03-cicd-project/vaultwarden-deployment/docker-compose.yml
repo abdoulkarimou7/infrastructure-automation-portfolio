@@ -1,12 +1,11 @@
-networks: 
+networks:
   internal:
-    internal: true 
-
-    
+    internal: true
 services:
   vaultwarden:
     build: .
     container_name: vaultwarden
+    user: "1000:1000"
     networks: [internal]
     restart: unless-stopped
     environment:
@@ -25,7 +24,7 @@ services:
     container_name: caddy
     restart: unless-stopped
     ports:
-      - ${CADDY_PORT}
+      - 444:443
     networks: [internal]
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile

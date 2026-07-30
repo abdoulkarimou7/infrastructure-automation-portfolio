@@ -100,6 +100,12 @@ Each milestone represents practical work completed in this repository.
 - Custom Docker image
 - Container health checks
 
+## Day 18
+- Caddy reverse proxy integration & TLS configuration
+- Advanced Docker port mapping & IP binding troubleshooting (`127.0.0.1`)
+- Low-level network inspection (`docker inspect`, `docker port`)
+- `Caddyfile` routing analysis & connection debugging
+
 ---
 
 # Milestones
