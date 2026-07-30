@@ -1,4 +1,5 @@
 networks:
+  frontend:
   internal:
     internal: true
 services:
@@ -24,14 +25,16 @@ services:
     container_name: caddy
     restart: unless-stopped
     ports:
-      - 444:443
-    networks: [internal]
+      - "127.0.0.1:444:443"
+    networks: [internal, frontend]
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
       - caddy_config:/config
     depends_on:
-      - vaultwarden
+      vaultwarden:
+        condition:
+          service_healthy
 
 volumes:
   caddy_data:
