@@ -137,6 +137,23 @@ Each milestone represents practical work completed in this repository.
 * Layered troubleshooting: host → Docker port publishing → Caddy → Vaultwarden
 * Git commit and remote synchronization
 
+## Day 20
+
+* HTB CTF Apocalypse — Web Exploitation (Challenge 1: "Gatery")
+* Reverse-engineered a minified React bundle to reconstruct the API contract (endpoints, payload shapes)
+* Identified broken session authentication: cookie signing configured at the app level but never enforced per-route
+* Session forgery via raw cookie value — bypassed authentication entirely without valid credentials
+* curl-based API testing workflow: JSON payloads, cookie jars, header/status inspection
+
+## Day 21
+
+* HTB CTF Apocalypse — Web Exploitation (Challenge 2: "Rookery")
+* Identified stored XSS via unescaped template rendering (EJS `<%- %>` vs `<%= %>`)
+* CSP bypass technique: third-party JSONP reflection abuse (whitelisted external domain)
+* HttpOnly cookie bypass via same-origin `fetch` exfiltration (targeting an automated admin bot)
+* Debugged a payload failure caused by upstream Unicode escaping (`>` → `\u003e`) corrupting JS syntax
+* Wrote full technical writeups (root cause + remediation) for both challenges
+
 ---
 
 # Milestones
@@ -150,6 +167,7 @@ Each milestone represents practical work completed in this repository.
 * ✅ End-to-End CI/CD Project
 * ✅ Vaultwarden Local Deployment
 * ✅ Docker Networking & Reverse Proxy Troubleshooting
+* ✅ Web Application Security Fundamentals (broken auth, XSS, CSP bypass — CTF-based)
 
 ---
 
