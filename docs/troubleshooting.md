@@ -315,6 +315,25 @@ Vaultwarden has no published host port.
 
 ---
 
+# Incident: Lost ADMIN_TOKEN after hashing
+
+**Date:** 2026-08-02
+**Project:** vaultwarden-deployment
+
+## Symptom
+After generating an Argon2id hash of the ADMIN_TOKEN with `vaultwarden hash`, I overwrote the original plaintext value in `.env` with the hash — losing access to the admin panel, since login requires the plaintext value (the hash is compared internally, never entered directly).
+
+## Root cause
+Misunderstood the hash workflow: hashing is one-way. The plaintext must be preserved separately (e.g., in a password manager) before/while replacing it with the hash in the config.
+
+## Resolution
+Regenerated a new ADMIN_TOKEN with `openssl rand -hex 32`, saved the plaintext value securely before hashing this time, then generated and stored the hash in `.env` (properly escaped with `$$` to avoid Docker Compose variable interpolation on `$`).
+
+## Lesson learned
+When hashing a secret for storage, always save the plaintext value in a secure location *before* overwriting it — hashing is irreversible by design.
+
+---
+
 ## Future Incidents
 
 Additional troubleshooting reports will be documented here as new projects are developed.
