@@ -334,6 +334,28 @@ When hashing a secret for storage, always save the plaintext value in a secure l
 
 ---
 
+# Incident: Vaultwarden database and session cookies committed to Git
+
+**Date:** 2026-08-02
+**Project:** vaultwarden-deployment
+
+## Symptom
+The Vaultwarden SQLite database (`vw-data/db.sqlite3` and related files) and a curl-generated `cookies.txt` (containing a session token) were accidentally tracked and pushed to the repository across multiple commits.
+
+## Root cause
+`vw-data/` (runtime data volume) and `cookies.txt` (generated during manual API testing) were never added to `.gitignore`, so they were committed along with legitimate config changes.
+
+## Resolution
+1. Untracked both paths (`git rm --cached`) and added them to `.gitignore`.
+2. Cleaned the entire Git history with `git filter-branch --index-filter`, removing both paths from every commit.
+3. Force-pushed the rewritten history.
+4. Verified with `git log --all -- <path>` that both paths no longer appear anywhere in history.
+
+## Lesson learned
+Any directory that stores runtime/application data (database files, session artifacts) must be added to `.gitignore` **before** the first commit involving that project — not after. A quick `git status` check before every commit is the cheapest safeguard against this.
+
+---
+
 ## Future Incidents
 
 Additional troubleshooting reports will be documented here as new projects are developed.
