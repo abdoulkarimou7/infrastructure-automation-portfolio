@@ -154,6 +154,25 @@ Each milestone represents practical work completed in this repository.
 * Debugged a payload failure caused by upstream Unicode escaping (`>` → `\u003e`) corrupting JS syntax
 * Wrote full technical writeups (root cause + remediation) for both challenges
 
+
+## Day 22
+
+* Kubernetes architecture fundamentals
+* Control Plane components (API Server, Scheduler, Controller Manager, etcd)
+* Worker Node components (kubelet, kube-proxy, container runtime)
+* Control loop and desired state model
+* Cluster communication workflow
+
+## Day 23
+
+* Kubernetes Pod architecture
+* One-container vs multi-container Pods
+* Pod lifecycle fundamentals
+* Control Plane failure scenarios
+* Scheduling and kubelet responsibilities
+* Kubernetes networking fundamentals (Pod IPs, Node communication)
+
+
 ---
 
 # Milestones
@@ -173,8 +192,8 @@ Each milestone represents practical work completed in this repository.
 
 # Next Milestones
 
+* ⏳ Kubernetes Deployment
 * ⏳ Terraform
-* ⏳ Kubernetes
 * ⏳ Monitoring & Observability
 * ⏳ DevSecOps
 * ⏳ Production Infrastructure Portfolio
