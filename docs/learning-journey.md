@@ -172,6 +172,16 @@ Each milestone represents practical work completed in this repository.
 * Scheduling and kubelet responsibilities
 * Kubernetes networking fundamentals (Pod IPs, Node communication)
 
+## Day 24
+
+* Kubernetes architecture overview
+* Control Plane components (`kube-apiserver`, `scheduler`, `controller-manager`, `etcd`)
+* Worker Node components (`kubelet`, `containerd`)
+* Kubernetes reconciliation loop
+* Pod scheduling workflow
+* ReplicaSet responsibilities
+* Deployment vs ReplicaSet responsibilities
+* Desired state vs imperative execution
 
 ---
 
