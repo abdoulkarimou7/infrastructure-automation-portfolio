@@ -183,6 +183,17 @@ Each milestone represents practical work completed in this repository.
 * Deployment vs ReplicaSet responsibilities
 * Desired state vs imperative execution
 
+## Day 25
+
+* Kubernetes resource model
+* Manifest fundamentals (`apiVersion`, `kind`, `metadata`, `spec`)
+* Kubernetes API versioning concepts
+* Desired state declaration through `spec`
+* Object identity with `metadata`
+* Pod vs ReplicaSet vs Deployment responsibilities
+* Deployment workflow (Deployment → ReplicaSet → Pod)
+* End-to-end Kubernetes reconciliation flow (`kubectl` → API Server → etcd → Controllers → Scheduler → kubelet → containerd)
+
 ---
 
 # Milestones
