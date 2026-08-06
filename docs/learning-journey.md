@@ -194,6 +194,19 @@ Each milestone represents practical work completed in this repository.
 * Deployment workflow (Deployment → ReplicaSet → Pod)
 * End-to-end Kubernetes reconciliation flow (`kubectl` → API Server → etcd → Controllers → Scheduler → kubelet → containerd)
 
+## Day 26
+
+* Kubernetes Pod manifest fundamentals
+* Understanding `apiVersion`, `kind`, `metadata` and `spec`
+* YAML structure analysis (mapping vs list)
+* First Pod manifest written from scratch
+* Container specification (`name`, `image`)
+* Kubernetes object hierarchy (Pod → Container)
+* Image pull lifecycle (`kubectl` → API Server → Scheduler → kubelet → containerd)
+* Understanding `ErrImagePull` and `ImagePullBackOff`
+* Desired state (`spec`) vs observed state (`status`)
+* kubelet status reporting and reconciliation fundamentals
+
 ---
 
 # Milestones
